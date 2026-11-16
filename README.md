@@ -6,8 +6,6 @@ Controls Kinora pxnode 4 and px4i pixel controllers from [Bitfocus Companion](ht
 
 The module talks to each node over its HTTP API. No firmware change or extra software is needed on the node.
 
-> **Status: in development.** The module has been tested against a fake node and, for polling and live commands, against pxnode 4 and px4i hardware on firmware 2.0.2. It has not yet been tested inside Companion, and GPI has not yet been tested on hardware. It is not published in the Companion module list.
-
 ## Requirements
 
 | Item      | Requirement                                                                         |
