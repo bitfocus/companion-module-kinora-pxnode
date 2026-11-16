@@ -11,16 +11,14 @@ The module talks to each node over its HTTP API. No firmware change or extra sof
 | Item      | Requirement                                                                         |
 | --------- | ----------------------------------------------------------------------------------- |
 | Node      | pxnode 4 or px4i with API version 1, reachable on TCP port 80                       |
-| Companion | A version that can run Node 26 modules                                              |
+| Companion | Version 4.0 or later                                                                |
 | Network   | Companion must reach each node's IP address; nodes are not discovered automatically |
 
 ## Setup
 
-1. Build the module, as described in [Development](#development).
-2. In Companion, set the developer modules path to the folder that contains this repository.
-3. Add one **Kinora pxnode** connection for each node.
-4. Enter the node's IP address, shown on its screen.
-5. Enter the password if the node has one.
+1. In Companion, add one **Kinora pxnode** connection for each node.
+2. Enter the node's IP address, shown on its screen.
+3. Enter the password if the node has one.
 
 Use **Whole zone** on an action to reach every node in a zone from one connection.
 
@@ -84,6 +82,8 @@ yarn format   # format the code
 yarn package  # create the package to submit
 ```
 
+To try a build in Companion before it is released, set Companion's developer modules path to the folder that contains this repository.
+
 ### Project layout
 
 | Path                | Purpose                                                     |
@@ -97,7 +97,7 @@ yarn package  # create the package to submit
 | `src/presets.ts`    | Ready-made Companion buttons                                |
 | `test/`             | Tests, including a fake node that behaves like the firmware |
 
-The API reference is `docs/reference/http-api.html` in the pxnode firmware repository.
+The HTTP API reference is published with each firmware version on [kinora.io/downloads](https://kinora.io/downloads#firmware).
 
 ## Licence
 
